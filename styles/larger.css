@@ -1,0 +1,28 @@
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    main .header {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    main .links {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    main .info {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+}
