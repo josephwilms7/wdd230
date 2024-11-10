@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #133b7b;
+    --accent-color: #02aced;
+    --background-color: #edf1fe;
+    --title-font: "sans-serif";
+    --body-font: "roboto";
+}
+
+* {
+    padding: 0.5rem;
+}
+
+.main {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.title-font {
+    font-family: var(--title-font);
+}
+
+.body-font {
+    font-family: var(--body-font);
+}
