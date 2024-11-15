@@ -1,10 +1,27 @@
 @media (min-width: 640px) {
-	nav ul {
-		display: flex;
-	}
-	nav ul li {
-		flex: 1 1 100%;
-	}
+    nav ul {
+        display: flex;
+    }
+
+    /* Hide the hamburger button on desktop */
+    .hamburger {
+        display: none;
+    }
+
+    /* Show the menu by default on desktop */
+    #menu {
+        display: block;
+    }
+
+    /* Remove the vertical stacking for menu items on desktop */
+    nav ul li {
+        border-top: none;
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        padding: .5rem;
+    }
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
