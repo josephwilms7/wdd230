@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header nav ul {
+        justify-content: flex-start;
+    }
+
+    .weather-card {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    #nav-menu.active {
+        display: block;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce homepage">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero-image.jpg">
+    <meta property="og:url" content="https://www.chamberofcommerce.com">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#join">Join Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Image Section -->
+        <section id="hero">
+            <img src="images/hero-image.jpg" alt="Chamber of Commerce Hero Image">
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="cta">
+            <a href="#join" class="cta-button">Join the Chamber of Commerce</a>
+        </section>
+
+        <!-- Current Events Section -->
+        <section id="events">
+            <h2>Current Events</h2>
+            <p>Check out the latest events happening in your community!</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Weather</h2>
+            <div class="weather-card">
+                <p>Weather forecast goes here...</p>
+            </div>
+        </section>
+
+        <!-- Company Spotlight Section -->
+        <section id="spotlights">
+            <h2>Company Spotlights</h2>
+            <div class="spotlight">
+                <h3>Company Name 1</h3>
+                <p>Details about Company 1...</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company Name 2</h3>
+                <p>Details about Company 2...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact Us: info@chamber.com | (555) 555-5555</p>
+        <p>Project by: Your Full Name | WDD 230 | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
