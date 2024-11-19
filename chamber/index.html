@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce homepage">
-    <meta property="og:title" content="Chamber of Commerce">
+    <meta name="description" content="Lethbridge Chamber of Commerce - Homepage">
+    <meta property="og:title" content="Lethbridge Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hero-image.jpg">
-    <meta property="og:url" content="https://www.chamberofcommerce.com">
-    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:image" content="images/lethbridge-downtown.jpeg">
+    <meta property="og:url" content="https://josephwilms7.github.io/wdd230/chamber/">
+    <link rel="icon" href="images/lethbridge-logo.ico">
     <title>Chamber of Commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -16,21 +16,15 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger icon -->
-        </div>
-        
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#join">Join Us</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#weather">Weather</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <button id="navButton">&#9776;</button>
+        <ul class="menuLinks">
+            <li><a href="#" title="Home">Page One</a></li>
+            <li class="current-menu-item"><a href="#">Page Two</a></li>
+            <li><a href="#" title="Service">Page Three</a></li>
+            <li><a href="#" title="History">Page Four</a></li>
+        </ul>
+    </nav>
 
     <!-- Main Content Area -->
     <main>
