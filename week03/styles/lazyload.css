@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    animation: fade 15s;
+}
+
+.image {
+    width: 100%;
+    padding: auto auto;
+}
