@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="banner">
-            <img src="images/self-portrait.jpg" width="100" height="100" alt="Self Portrait">
+            <img src="images/self-portrait.webp" width="100" height="100" alt="Self Portrait">
             <span>Joseph Williams</span>
         </div>
     </header>
@@ -38,6 +38,14 @@
     </nav>
     
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/vancouver-temple-small.webp" media="(max-width: 640px)">
+                <img src="images/vancouver-temple-large.webp" alt="Image of Vancouver Temple" loading="lazy">
+            </picture>
+            <span>Vancouver British Columbia Temple</span>
+        </div>
+        
         <div class="header">
             <h1>WDD 230: Web Frontend Development</h1>
             <hr>
@@ -55,7 +63,7 @@
                         <span>Week 02: <a href="/week02/design.html">Design</a></span>
                     </li>
                     <li>
-                        <span>Week 03: <a href="#"></a></span>
+                        <span>Week 03: Week 03: <a href="week03/images/landscape.webp">WebP</a></span>
                     </li>
                     <li>
                         <span>Week 04: <a href="#"></a></span>
@@ -81,9 +89,13 @@
             <div class="body">
                 <p>Lethbridge, Alberta</p>
                 <p>5 C - Sunny</p>
-                <p>Page Visits: 15</p>
+                <p>Page Visits: <span id="visits"></span></p>
             </div>
         </section>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82597.7556855217!2d-112.845585!3d49.68858560000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x536e864af15acd23%3A0x1c5c78e36295beae!2sLethbridge%2C%20AB!5e0!3m2!1sen!2sca!4v1732219156302!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p>&#169;<span id="currentyear"></span> Joseph Williams - Alberta Canada</p>

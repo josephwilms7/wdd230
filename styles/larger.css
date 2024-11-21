@@ -3,17 +3,14 @@
         display: flex;
     }
 
-    /* Hide the hamburger button on desktop */
     .hamburger {
         display: none;
     }
 
-    /* Show the menu by default on desktop */
     #menu {
         display: block;
     }
 
-    /* Remove the vertical stacking for menu items on desktop */
     nav ul li {
         border-top: none;
         flex: 1 1 100%;
@@ -25,21 +22,31 @@
 
     main {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto 1fr 1fr auto;
     }
 
     main .header {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
     }
+
+    main .hero {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
     
     main .links {
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
     }
     
     main .info {
         grid-column: 3 / 4;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    main .map {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
     }
 }
