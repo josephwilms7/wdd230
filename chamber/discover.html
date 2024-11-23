@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joseph Williams">
+    <meta name="description" content="Lethbridge Chamber of Commerce - Homepage">
+    <meta property="og:title" content="Lethbridge Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://josephwilms7.github.io/wdd230/chamber/images/lethbridge-downtown.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sans+Serif&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://josephwilms7.github.io/wdd230/chamber/">
+    <link rel="icon" href="images/lethbridge-logo.ico">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/lethbridge-logo.svg" alt="Chamber of Commerce Logo">
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>     
+
+    <main class="discover-page">
+        <aside class="sidebar">
+            <div class="card">
+                <h2>Welcome Message</h2>
+                <p id="visit-message"></p>
+
+                <h3>Discover Lethbridge</h3>
+                <p>Lethbridge is a growing city with a rich history and diverse cultural attractions. Explore what our community has to offer!</p>
+            </div>
+
+            <div class="card">
+                <h3>Quick Facts</h3>
+                <h4>Popular Events</h4>
+                <ul>
+                    <li>Annual Christmas Tree Lighting</li>
+                    <li>Farmers Market on Saturdays</li>
+                    <li>Summer Outdoor Concerts</li>
+                </ul>
+
+                <h4>Demographics</h4>
+                <p>Population: 100,000</p>
+                <p>Average Household Income: $50,000</p>
+            </div>
+            
+            <div class="card">
+                <h3>Local Attractions</h3>
+                <h4>Places to Visit</h4>
+                <ul>
+                    <li>Elizabeth Wetlands</li>
+                    <li>Lethbridge Corn Maze</li>
+                    <li>Downtown Lethbridge</li>
+                </ul>
+
+                <h4>Places to Eat</h4>
+                <ul>
+                    <li>Water Tower Grill</li>
+                    <li>Farmers Market on Saturdays</li>
+                    <li>Tacos Made in Mexico</li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="gallery">
+            <div class="image-gallery">
+                <img src="images/corn-maze.jpg" alt="Lethbridge Cord Maze" loading="lazy">
+                <img src="images/elizabeth-wetlands.jpg" alt="Elizabeth Wetlands" loading="lazy">
+                <img src="images/galt-mesuem.jpg" alt="Galt Muesem" loading="lazy">
+                <img src="images/henderson-park.jpg" alt="Henderson Park" loading="lazy">
+                <img src="images/japanese-garden.jpg" alt="Japanese Garden" loading="lazy">
+                <img src="images/water-tower-grill.jpg" alt="Water Tower Grill" loading="lazy">
+            </div>
+        </section>
+    </main>  
+
+    <footer>
+        <p>Contact Us: email@lethbridge.ca | (123) 456-7890</p>
+        <p>Project by Joseph Williams for WDD 230 - Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
