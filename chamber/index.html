@@ -7,6 +7,7 @@
     <meta property="og:title" content="Lethbridge Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/lethbridge-downtown.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sans+Serif&display=swap" rel="stylesheet">
     <meta property="og:url" content="https://josephwilms7.github.io/wdd230/chamber/">
     <link rel="icon" href="images/lethbridge-logo.ico">
     <title>Chamber of Commerce</title>
@@ -15,63 +16,79 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <nav>
-        <button id="navButton">&#9776;</button>
-        <ul class="menuLinks">
-            <li><a href="#" title="Home">Page One</a></li>
-            <li class="current-menu-item"><a href="#">Page Two</a></li>
-            <li><a href="#" title="Service">Page Three</a></li>
-            <li><a href="#" title="History">Page Four</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">
+            <img src="images/lethbridge-logo.svg" alt="Chamber of Commerce Logo">
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>     
 
-    <!-- Main Content Area -->
     <main>
-        <!-- Hero Image Section -->
-        <section id="hero">
-            <img src="images/hero-image.jpg" alt="Chamber of Commerce Hero Image">
+        <section class="hero">
+            <img src="images/lethbridge-downtown.jpg" alt="Chamber of Commerce Hero">
+            <div class="hero-text">
+                <h1>Lethbridge Chamber of Commerce</h1>
+                <p>Your gateway to business success in the community!</p>
+                <a href="#join" class="cta-button">Join Us Today</a>
+            </div>
         </section>
-
-        <!-- Call to Action Section -->
-        <section id="cta">
-            <a href="#join" class="cta-button">Join the Chamber of Commerce</a>
-        </section>
-
-        <!-- Current Events Section -->
-        <section id="events">
+    
+        <section class="card events">
             <h2>Current Events</h2>
-            <p>Check out the latest events happening in your community!</p>
+            <div class="events-container">
+                <article class="event">
+                    <h3>Annual Christmas Tree Lighting</h3>
+                    <p>Join us on December 22nd for the annual Christmas tree lighting in the downtown square. Activities include free hot chocolate, live entertainment, and horse-drawn carriage rides.</p>
+                    <a href="#">More info ...</a>
+                </article>
+            </div>
         </section>
-
-        <!-- Weather Section -->
-        <section id="weather">
-            <h2>Weather</h2>
+    
+        <section class="card weather">
+            <h2>Today's Weather</h2>
             <div class="weather-card">
-                <p>Weather forecast goes here...</p>
+                <p><strong>Location:</strong> Lethbridge, AB</p>
+                <p><strong>Temperature:</strong> 72°F</p>
+                <p><strong>Condition:</strong> Sunny</p>
+                <p><strong>Wind Chill:</strong> N/A</p>
             </div>
         </section>
-
-        <!-- Company Spotlight Section -->
-        <section id="spotlights">
-            <h2>Company Spotlights</h2>
-            <div class="spotlight">
-                <h3>Company Name 1</h3>
-                <p>Details about Company 1...</p>
+    
+        <section class="spotlights">
+            <div class="spotlight spotlight-1 card">
+                <h3>Thankful Transport</h3>
+                <a href="mailto:hello@thankfultransport.com">hello@thankfultransport.com</a><br>
+                <a href="tel:+9999999999">+999-9999-9999</a><br>
+                <a href="#">Website</a>
             </div>
-            <div class="spotlight">
-                <h3>Company Name 2</h3>
-                <p>Details about Company 2...</p>
+            <div class="spotlight spotlight-2 card">
+                <h3>Code Primera</h3>
+                <a href="mailto:hello@codeprimera.com">hello@codeprimera.com</a><br>
+                <a href="tel:+9999999999">+999-9999-9999</a><br>
+                <a href="#">Website</a>
+            </div>
+            <div class="spotlight spotlight-3 card">
+                <h3>Build A Treefort</h3>
+                <a href="mailto:hello@buildatreefort.com">hello@buildatreefort.com</a><br>
+                <a href="tel:+9999999999">+999-9999-9999</a><br>
+                <a href="#">Website</a>
             </div>
         </section>
-    </main>
+    </main>    
 
-    <!-- Footer Section -->
     <footer>
-        <p>Contact Us: info@chamber.com | (555) 555-5555</p>
-        <p>Project by: Your Full Name | WDD 230 | Last Modified: <span id="last-modified"></span></p>
+        <p>Contact Us: email@lethbridge.ca | (123) 456-7890</p>
+        <p>Project by Joseph Williams for WDD 230 - Last updated: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

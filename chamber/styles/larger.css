@@ -1,29 +1,94 @@
-@media (min-width: 768px) {
-    body {
-        max-width: 1200px;
-        margin: 0 auto;
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    header .logo {
+        flex-grow: 1;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     header nav ul {
-        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
-    .weather-card {
-        display: flex;
+    header nav ul li {
+        margin: 0 1.5rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    main {
+        flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .events,
+    .weather {
+        width: 48%;
+        margin: 1rem 0;
+    }
+
+    .spotlights {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .spotlight {
+        width: 30%;
     }
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
+@media (min-width: 1024px) {
+    .hero-text h1 {
+        font-size: 3rem;
     }
 
-    #nav-menu {
-        display: none;
+    .cta-button {
+        padding: 1rem 2rem;
     }
 
-    #nav-menu.active {
-        display: block;
+    .events,
+    .weather {
+        width: 45%;
+    }
+
+    .spotlights {
+        gap: 2rem;
+    }
+
+    .spotlight {
+        width: 30%;
     }
 }
