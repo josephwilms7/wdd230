@@ -323,3 +323,77 @@ form input[type="submit"]:hover {
 .benefit li {
     margin-bottom: 0.5rem;
 }
+
+/* Members */
+
+/* Directory Toggle */
+.directory-view-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.directory-view-toggle button {
+    background-color: #02aced;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.directory-view-toggle button:hover {
+    background-color: #133b7b;
+}
+
+/* Directory Grid View */
+.directory.grid-view {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.directory.grid-view .member-card {
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.directory.grid-view .member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.directory.list-view {
+    display: block;
+}
+
+.directory.list-view .member-card {
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.directory.list-view .member-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    float: left;
+}
+
+.list-view .member-card img {
+    display: none;
+}

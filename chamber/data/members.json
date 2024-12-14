@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Thankful Transport",
+        "address": "123 Transport Ave, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://thankfultransport.com",
+        "image": "thankful-transport.jpg",
+        "membership_level": "Gold",
+        "email": "hello@thankfultransport.com"
+      },
+      {
+        "name": "Code Primera",
+        "address": "456 Code St, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://codeprimera.com",
+        "image": "code-primera.jpg",
+        "membership_level": "Silver",
+        "email": "hello@codeprimera.com"
+      },
+      {
+        "name": "Build A Treefort",
+        "address": "789 Treefort Rd, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://buildatreefort.com",
+        "image": "build-treefort.jpg",
+        "membership_level": "Bronze",
+        "email": "hello@buildatreefort.com"
+      },
+      {
+        "name": "Innovative Solutions",
+        "address": "101 Innovation Blvd, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://innovativesolutions.com",
+        "image": "innovative-solutions.jpg",
+        "membership_level": "Gold",
+        "email": "hello@innovativesolutions.com"
+      },
+      {
+        "name": "Green Leaf Landscaping",
+        "address": "202 Green St, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://greenleaflandscaping.com",
+        "image": "green-leaf.jpg",
+        "membership_level": "Silver",
+        "email": "hello@greenleaflandscaping.com"
+      },
+      {
+        "name": "TechnoCore Solutions",
+        "address": "303 Techno Blvd, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://technocoresolutions.com",
+        "image": "techno-core.jpg",
+        "membership_level": "Bronze",
+        "email": "hello@technocoresolutions.com"
+      },
+      {
+        "name": "Skyline Architects",
+        "address": "404 Skyline Dr, Lethbridge, AB",
+        "phone": "+999-9999-9999",
+        "website": "http://skylinearchitects.com",
+        "image": "skyline-architects.jpg",
+        "membership_level": "Gold",
+        "email": "hello@skylinearchitects.com"
+      }
+    ]
+  }
+  

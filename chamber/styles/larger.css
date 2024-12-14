@@ -80,10 +80,10 @@
     .membership-benefits {
         padding: 2rem;
     }
-/* 
-    .membership-level {
-        width: 45%;
-    } */
+
+    .directory.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (min-width: 1024px) {
