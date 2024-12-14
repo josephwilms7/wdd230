@@ -8,7 +8,6 @@ const lastModified = document.getElementById("lastModified");
 lastModified.innerHTML = document.lastModified;
 
 
-// Store the last visit date in localStorage
 const lastVisit = localStorage.getItem('lastVisit');
 const currentDate = Date.now();
 
@@ -21,5 +20,4 @@ if (lastVisit) {
     document.getElementById('visit-message').innerText = 'Welcome! Let us know if you have any questions.';
 }
 
-// Save the current visit date
 localStorage.setItem('lastVisit', currentDate);
