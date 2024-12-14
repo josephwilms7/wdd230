@@ -1,0 +1,69 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "HG Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "mQueries"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/css-grid.html",
+            "title": "CSS Grid"
+          },
+          {
+            "url": "week02/animations.html",
+            "title": "CSS Animations"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/javascript-basics.html",
+            "title": "JavaScript Basics"
+          },
+          {
+            "url": "week03/dom-manipulation.html",
+            "title": "DOM Manipulation"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/api-fetch.html",
+            "title": "API Fetch"
+          },
+          {
+            "url": "week04/ajax.html",
+            "title": "AJAX"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "week05/web-performance.html",
+            "title": "Web Performance"
+          },
+          {
+            "url": "week05/service-workers.html",
+            "title": "Service Workers"
+          }
+        ]
+      }
+    ]
+}
