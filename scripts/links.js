@@ -12,33 +12,30 @@ async function getLinks() {
   }
 }
 
-function displayLinks(weeks) {
+function displayLinks(data) {
   const linksContainer = document.getElementById("learning-activities");
   linksContainer.innerHTML = "";
 
-  weeks.weeks.forEach(week => {
-    const weekDiv = document.createElement("div");
-    weekDiv.classList.add("week");
-
-    const weekHeading = document.createElement("h3");
-    weekHeading.textContent = week.week;
-    weekDiv.appendChild(weekHeading);
-
-    const linkList = document.createElement("ul");
-
-    week.links.forEach(link => {
-      const listItem = document.createElement("li");
-
+  data.weeks.forEach(week => {
+    const listItem = document.createElement("li");
+    
+    const weekText = document.createElement("span");
+    weekText.innerHTML = `${week.week}: `;
+    
+    week.links.forEach((link, index) => {
       const anchorTag = document.createElement("a");
       anchorTag.href = baseURL + link.url;
       anchorTag.textContent = link.title;
 
-      listItem.appendChild(anchorTag);
-      linkList.appendChild(listItem);
+      if (index < week.links.length - 1) {
+        anchorTag.innerHTML += " | ";
+      }
+
+      weekText.appendChild(anchorTag);
     });
 
-    weekDiv.appendChild(linkList);
-    linksContainer.appendChild(weekDiv);
+    listItem.appendChild(weekText);
+    linksContainer.appendChild(listItem);
   });
 }
 

@@ -17,12 +17,8 @@
         "week": "Week 2",
         "links": [
           {
-            "url": "week02/css-grid.html",
-            "title": "CSS Grid"
-          },
-          {
-            "url": "week02/animations.html",
-            "title": "CSS Animations"
+            "url": "week02/design.html",
+            "title": "Design"
           }
         ]
       },
@@ -30,12 +26,12 @@
         "week": "Week 3",
         "links": [
           {
-            "url": "week03/javascript-basics.html",
-            "title": "JavaScript Basics"
+            "url": "week03/images/landscape.webp",
+            "title": "WebP"
           },
           {
-            "url": "week03/dom-manipulation.html",
-            "title": "DOM Manipulation"
+            "url": "week03/lazyload.html",
+            "title": "Lazy Load"
           }
         ]
       },
@@ -43,12 +39,16 @@
         "week": "Week 4",
         "links": [
           {
-            "url": "week04/api-fetch.html",
-            "title": "API Fetch"
+            "url": "https://codepen.io/uncore007/pen/gbYbLYQ",
+            "title": "Pseudo Classes"
           },
           {
-            "url": "week04/ajax.html",
-            "title": "AJAX"
+            "url": "week04/images/screenshot.png",
+            "title": "Screenshot"
+          },
+          {
+            "url": "week04/tablebuild.html",
+            "title": "Table"
           }
         ]
       },
@@ -56,12 +56,8 @@
         "week": "Week 5",
         "links": [
           {
-            "url": "week05/web-performance.html",
-            "title": "Web Performance"
-          },
-          {
-            "url": "week05/service-workers.html",
-            "title": "Service Workers"
+            "url": "week05/new-ward-members.json",
+            "title": "JSON"
           }
         ]
       }
