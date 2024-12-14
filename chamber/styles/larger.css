@@ -68,6 +68,22 @@
     .spotlight {
         width: 30%;
     }
+
+    .join-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-form {
+        padding: 2rem;
+    }
+
+    .membership-benefits {
+        padding: 2rem;
+    }
+/* 
+    .membership-level {
+        width: 45%;
+    } */
 }
 
 @media (min-width: 1024px) {

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joseph Williams">
+    <meta name="description" content="Lethbridge Chamber of Commerce - Homepage">
+    <meta property="og:title" content="Join the Lethbridge Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://josephwilms7.github.io/wdd230/chamber/images/lethbridge-downtown.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sans+Serif&display=swap" rel="stylesheet">
+    <meta property="og:url" content="https://josephwilms7.github.io/wdd230/chamber/">
+    <link rel="icon" href="images/lethbridge-logo.ico">
+    <title>Join the Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/lethbridge-logo.svg" alt="Chamber of Commerce Logo">
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>     
+
+    <main>
+        <section class="join-section">
+            <div class="join-form">
+                <h2>Join the Chamber of Commerce</h2>
+                <form action="thankyou.html" method="get">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="position">Title or Position</label>
+                    <input type="text" id="position" name="position" pattern="[A-Za-z\s-]{7,}" title="Only letters, spaces, and hyphens are allowed, and at least 7 characters" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+                    <label for="phone">Mobile Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="business-name">Business Name</label>
+                    <input type="text" id="business-name" name="business-name" required>
+
+                    <label for="membership-level">Membership Level</label>
+                    <select id="membership-level" name="membership-level">
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description"></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="<?= date('Y-m-d H:i:s') ?>">
+
+                    <input type="submit" value="Join">
+                </form>
+            </div>
+
+            <div class="membership-benefits">
+                <h2>Membership Level Benefits</h2>
+                <div class="benefits">
+                    <div class="benefit">
+                        <h3>NP Membership</h3>
+                        <ul>
+                            <li>No fee</li>
+                            <li>Access to community resources</li>
+                            <li>Annual networking event</li>
+                        </ul>
+                    </div>
+                    <div class="benefit">
+                        <h3>Bronze Membership</h3>
+                        <ul>
+                            <li>Special event invitations</li>
+                            <li>Discounts on Chamber programs</li>
+                            <li>Spotlight on website</li>
+                        </ul>
+                    </div>
+                    <div class="benefit">
+                        <h3>Silver Membership</h3>
+                        <ul>
+                            <li>All Bronze Membership benefits</li>
+                            <li>Discounted advertising on website</li>
+                            <li>Event booth access</li>
+                        </ul>
+                    </div>
+                    <div class="benefit">
+                        <h3>Gold Membership</h3>
+                        <ul>
+                            <li>All Silver Membership benefits</li>
+                            <li>Exclusive event invitations</li>
+                            <li>Free advertising on homepage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <p>Contact Us: email@lethbridge.ca | (123) 456-7890</p>
+        <p>Project by Joseph Williams for WDD 230 - Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
