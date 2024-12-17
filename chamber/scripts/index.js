@@ -52,3 +52,31 @@ function toggleMenu() {
 const lastModified = document.getElementById("lastModified");
 
 lastModified.innerHTML = document.lastModified;
+
+fetch('data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        const spotlightMembers = data.members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+        
+        const randomSpotlights = [];
+        while (randomSpotlights.length < 3 && spotlightMembers.length > 0) {
+            const randomIndex = Math.floor(Math.random() * spotlightMembers.length);
+            randomSpotlights.push(spotlightMembers[randomIndex]);
+            spotlightMembers.splice(randomIndex, 1);
+        }
+
+        const spotlightSection = document.querySelector('.spotlights');
+        randomSpotlights.forEach(member => {
+            const memberCard = `
+                <div class="spotlight card">
+                    <h3>${member.name}</h3>
+                    <p>${member.membership_level} member</p>
+                    <a href="mailto:${member.email}">${member.email}</a><br>
+                    <a href="tel:${member.phone}">${member.phone}</a><br>
+                    <a href="${member.website}" target="_blank">Website</a>
+                </div>
+            `;
+            spotlightSection.innerHTML += memberCard;
+        });
+    })
+    .catch(error => console.error('Error fetching members:', error));
