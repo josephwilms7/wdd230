@@ -11,7 +11,7 @@ async function loadDirectory() {
             card.classList.add('member-card');
             
             const image = document.createElement('img');
-            image.src = `images/${member.image}`;
+            image.src = `${member.image}`;
             image.alt = member.name;
             
             const name = document.createElement('h3');
@@ -60,3 +60,12 @@ window.onload = function() {
     loadDirectory();
     toggleView('grid');
 };
+
+const lastModified = document.getElementById("lastModified");
+
+lastModified.innerHTML = document.lastModified;
+
+function toggleMenu() {
+    const menu = document.getElementById('nav-menu');
+    menu.classList.toggle('active');
+}
